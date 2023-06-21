@@ -1,0 +1,23 @@
+@import "../../components/styles/variables.scss";
+
+.header__ {
+  &container {
+    background-color: $night;
+    color: white;
+    font-family: "Krub";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 150px;
+    width: 100%;
+  }
+  &text{
+    position: relative;
+    top: 33%;
+    left: 5%;
+    display:inline;
+  }
+}

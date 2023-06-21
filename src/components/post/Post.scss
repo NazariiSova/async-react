@@ -1,0 +1,44 @@
+@import "../styles/variables.scss";
+
+.Post__ {
+  &container {
+    margin-top: 10%;
+    width: 100%;
+    min-width: 500px;
+    height: 90%;
+    background-color: white;
+    padding-top: 25px;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  &box {
+    display: block;
+  }
+  &title {
+    font-family: "Krub";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    
+    text-align: center;
+   
+  }
+  &description {
+    font-family: "Krub";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 10%;
+  }
+  &line-footer {
+    margin-top: 90%;
+    height: 8px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #4169e1;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../styles/variables.scss";
+
+.footer__ {
+  &container {
+    margin-top: 15%;
+    background-color: #05007f;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &line {
+    position: relative;
+    width: 80%;
+    height: 8px;
+    top: 7%;
+    background: $line;
+    border-radius: 10px;
+  }
+}

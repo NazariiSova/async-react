@@ -1,0 +1,22 @@
+@import "../src/components/styles/variables.scss";
+
+.App__ {
+  &container {
+    background-color: $sky;
+    height: 100%;
+    width: 100%;
+  }
+  &body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &post {
+    display: block;
+    
+  }
+  &footer{
+    display: block;
+  }
+  
+}
