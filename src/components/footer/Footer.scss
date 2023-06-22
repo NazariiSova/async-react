@@ -3,7 +3,7 @@
 .footer__ {
   &container {
     margin-top: 15%;
-    background-color: #05007f;
+    background-color: $night;
     height: 200px;
     width: 100%;
     display: flex;
@@ -11,10 +11,31 @@
   }
   &line {
     position: relative;
-    width: 80%;
+    width: 65%;
     height: 8px;
     top: 7%;
     background: $line;
     border-radius: 10px;
+  }
+}
+
+@media (max-width: 500px){
+  .footer__ {
+    &container {
+      margin-top: 20%;
+      background-color: $night;
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    &line {
+      position: relative;
+      width: 65%;
+      height: 4px;
+      top: 7%;
+      background: $line;
+      border-radius: 10px;
+    }
   }
 }

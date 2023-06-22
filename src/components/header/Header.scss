@@ -21,3 +21,28 @@
     display:inline;
   }
 }
+
+@media (max-width: 500px){
+  .header__ {
+    &container {
+      background-color: $night;
+      color: white;
+      font-family: "Krub";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 47px;
+      letter-spacing: 0em;
+      text-align: left;
+      height: 50px;
+      width: 100%;
+    }
+    &text{
+      position: relative;
+      top: 10%;
+      left: 5%;
+      display:inline;
+    }
+  }
+  
+}
