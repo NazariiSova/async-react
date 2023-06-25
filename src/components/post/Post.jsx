@@ -1,13 +1,31 @@
-import React from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 import "./Post.scss";
+import fetchUserByID from "../api/api.jsx";
 
-const Post = () => {
+const Post = ({ title, body, userId }) => {
+  const [userInfo, setUserInfo] = useState(null);
+  const [modal, setModal] = useState(false);
+  const dataUser = 0;
+
+  const handleButtonClick = async () => {
+    if (modal === false) {
+      const user = await fetchUserByID(userId);
+      setUserInfo(user[0]);
+      console.log(user);
+    }
+    setModal(!modal);
+  };
+
   return (
     <div className="Post__container">
       <div className="Post__box">
-        <div className="Post__title">dfgghfghf</div>
-        <div className="Post__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquid molestias facere quos ullam quia velit unde, numquam minus! Placeat iusto, eaque temporibus ratione amet veritatis iure perspiciatis eos velit vitae nostrum obcaecati omnis blanditiis impedit in quam mollitia deleniti rerum repellat repellendus id voluptates distinctio cupiditate. Minus, quasi enim?</div>
-        <div className="Post__line-footer"></div>
+        <div className="Post__title">{title}</div>
+        <div className="Post__description">{body}</div>
+        <div className="Post__button" onClick={handleButtonClick}>
+          get info
+        </div>
+        {modal && <div className="Post__modal">{userInfo.name}</div>}
       </div>
     </div>
   );

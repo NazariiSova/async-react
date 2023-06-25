@@ -8,6 +8,7 @@
     max-width: 90%;
     background-color: white;
     padding-top: 25px;
+    padding-bottom: 25px;
     color: black;
     border-radius: 10px;
     display: flex;
@@ -34,7 +35,7 @@
     line-height: 31px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: 10%;
+    margin-top: 2%;
   }
   &line-footer {
     margin-top: 90px;
@@ -43,6 +44,32 @@
     width: 80%;
     border-radius: 10px;
     background-color: $line;
+  }
+  &button{
+    background-color: $pink;
+    color: white;
+    font-family: "Krub";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 2%;
+    border-radius: 10px;
+    padding: 10px 7px 5px 7px;
+  }
+  &modal{
+    padding-top: 5px;
+    margin-top: 40px;
+    width: 300px;
+    height: 40px;
+    background-color: $night;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 30px;
   }
 }
 
@@ -90,6 +117,32 @@
       width: 80%;
       border-radius: 10px;
       background-color: $line;
+    }
+    &button{
+      background-color: $pink;
+      color: white;
+      font-family: "Krub";
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 31px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-top: 2%;
+      border-radius: 10px;
+      padding: 4px 7px 5px 7px;
+    }
+    &modal{
+      padding-top: 4px;
+      margin-top: 20px;
+      width: 180px;
+      height: 30px;
+      background-color: $night;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      font-size: 20px;
     }
   }
 }
